@@ -9,6 +9,8 @@ import Driver from "./routes/Driver";
 import Meetings from "./routes/Meetings";
 import CarData from "./routes/CarData";
 import Subscribe from "./routes/Subscribe";
+import SignIn from "./routes/SignIn";
+import SignUp from "./routes/SignUp";
 import NotFound from "./routes/NotFound";
 
 const router = createBrowserRouter([
@@ -39,6 +41,14 @@ const router = createBrowserRouter([
       {
         path: "/subscribe",
         element: <Subscribe />,
+      },
+      {
+        path: "/signin",
+        element: <SignIn />,
+      },
+      {
+        path: "/signup",
+        element: <SignUp />,
       },
       {
         path: "*",
