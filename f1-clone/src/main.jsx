@@ -13,6 +13,7 @@ import SignIn from "./routes/SignIn";
 import SignUp from "./routes/SignUp";
 import NotFound from "./routes/NotFound";
 import ProtectedRoute from "./routes/ProtectedRoute";
+import Logout from "./routes/LogOut";
 
 const router = createBrowserRouter([
   {
@@ -34,6 +35,10 @@ const router = createBrowserRouter([
       {
         path: "/signup",
         element: <SignUp />,
+      },
+      {
+        path: "/logout",
+        element: <Logout />,
       },
       {
         element: <ProtectedRoute />,
