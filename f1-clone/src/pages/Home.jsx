@@ -17,11 +17,7 @@ const Home = () => {
           One World Championship in 1981, has been one of the premier forms of
           racing around the world since its inaugural season in 1950.
         </p>
-        <img
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Formula_One_logo.svg/1024px-Formula_One_logo.svg.png"
-          alt="Formula One Logo"
-          className="w-full h-auto mb-4"
-        />
+
         <p>
           Formula One cars are the fastest regulated road-course racing cars in
           the world, owing to very high cornering speeds achieved through the
@@ -60,26 +56,6 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="mb-16">
-        <h2 className="text-3xl font-semibold mb-4">Stories</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <div className="bg-gray-800 p-4 rounded-lg shadow-lg">
-            <h3 className="text-2xl font-bold mb-2">Story 1</h3>
-            <p>
-              Read about the fascinating stories from the history of Formula
-              One. This section covers various interesting aspects of F1.
-            </p>
-          </div>
-          <div className="bg-gray-800 p-4 rounded-lg shadow-lg">
-            <h3 className="text-2xl font-bold mb-2">Story 2</h3>
-            <p>
-              Discover more stories from the world of Formula One. From historic
-              races to legendary drivers, this section has it all.
-            </p>
-          </div>
-        </div>
-      </section>
-
       <section>
         <h2 className="text-3xl font-semibold mb-4">Gallery</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -98,6 +74,27 @@ const Home = () => {
             alt="Formula McLaren"
             className="w-full h-auto rounded-lg shadow-lg"
           />
+        </div>
+        <br></br>
+      </section>
+
+      <section className="mb-16">
+        <h2 className="text-3xl font-semibold mb-4">Stories</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="bg-gray-800 p-4 rounded-lg shadow-lg">
+            <h3 className="text-2xl font-bold mb-2">Story 1</h3>
+            <p>
+              Read about the fascinating stories from the history of Formula
+              One. This section covers various interesting aspects of F1.
+            </p>
+          </div>
+          <div className="bg-gray-800 p-4 rounded-lg shadow-lg">
+            <h3 className="text-2xl font-bold mb-2">Story 2</h3>
+            <p>
+              Discover more stories from the world of Formula One. From historic
+              races to legendary drivers, this section has it all.
+            </p>
+          </div>
         </div>
       </section>
     </div>
