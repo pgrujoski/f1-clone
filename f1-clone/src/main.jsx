@@ -8,6 +8,7 @@ import Drivers from "./routes/Drivers";
 import Driver from "./routes/Driver";
 import Meetings from "./routes/Meetings";
 import CarData from "./routes/CarData";
+import Subscribe from "./routes/Subscribe";
 import NotFound from "./routes/NotFound";
 
 const router = createBrowserRouter([
@@ -34,6 +35,10 @@ const router = createBrowserRouter([
       {
         path: "/car-data",
         element: <CarData />,
+      },
+      {
+        path: "/subscribe",
+        element: <Subscribe />,
       },
       {
         path: "*",
