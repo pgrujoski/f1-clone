@@ -12,6 +12,7 @@ import Subscribe from "./routes/Subscribe";
 import SignIn from "./routes/SignIn";
 import SignUp from "./routes/SignUp";
 import NotFound from "./routes/NotFound";
+import ProtectedRoute from "./routes/ProtectedRoute";
 
 const router = createBrowserRouter([
   {
@@ -21,22 +22,6 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home />,
-      },
-      {
-        path: "/drivers",
-        element: <Drivers />,
-      },
-      {
-        path: "/driver/:id",
-        element: <Driver />,
-      },
-      {
-        path: "/meetings",
-        element: <Meetings />,
-      },
-      {
-        path: "/car-data",
-        element: <CarData />,
       },
       {
         path: "/subscribe",
@@ -49,6 +34,27 @@ const router = createBrowserRouter([
       {
         path: "/signup",
         element: <SignUp />,
+      },
+      {
+        element: <ProtectedRoute />,
+        children: [
+          {
+            path: "/drivers",
+            element: <Drivers />,
+          },
+          {
+            path: "/driver/:id",
+            element: <Driver />,
+          },
+          {
+            path: "/meetings",
+            element: <Meetings />,
+          },
+          {
+            path: "/car-data",
+            element: <CarData />,
+          },
+        ],
       },
       {
         path: "*",
