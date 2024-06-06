@@ -37,6 +37,12 @@ const Header = () => {
         >
           Subscribe
         </Link>
+        <Link
+          to="/logout"
+          className="bg-red-300 text-white py-2 px-4 rounded mx-2"
+        >
+          Logout
+        </Link>
       </div>
     </header>
   );
