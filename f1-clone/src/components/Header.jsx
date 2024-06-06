@@ -18,10 +18,10 @@ const Header = () => {
           Drivers
         </Link>
         <Link to="/meetings" className="text-white font-bold">
-          Grand Prix Meetings
+          Schedule
         </Link>
         <Link to="/car-data" className="text-white font-bold">
-          Car Data
+          Cars
         </Link>
       </div>
       <div>
