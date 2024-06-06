@@ -1,4 +1,3 @@
-// src/components/Header.jsx
 import React from "react";
 import { Link } from "react-router-dom";
 
@@ -6,21 +5,23 @@ const Header = () => {
   return (
     <header className="bg-red-700 p-4 flex items-center justify-between">
       <div>
-        <img
-          src="https://media.formula1.com/image/upload/f_auto,c_limit,w_195,q_auto/etc/designs/fom-website/images/f1_logo"
-          alt="f1 logo"
-          className="h-10"
-        />
+        <Link to="/">
+          <img
+            src="https://media.formula1.com/image/upload/f_auto,c_limit,w_195,q_auto/etc/designs/fom-website/images/f1_logo"
+            alt="f1 logo"
+            className="h-10"
+          />
+        </Link>
       </div>
       <div className="flex space-x-4">
         <Link to="/drivers" className="text-white font-bold">
           Drivers
         </Link>
         <Link to="/meetings" className="text-white font-bold">
-          Schedule
+          Grand Prix Meetings
         </Link>
         <Link to="/car-data" className="text-white font-bold">
-          Cars
+          Car Data
         </Link>
       </div>
       <div>
